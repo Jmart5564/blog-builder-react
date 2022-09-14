@@ -9,9 +9,7 @@ export default function Editor({
   setSubtitle,
   text,
   setText,
-  align,
   setAlign,
-  titleFont,
   setTitleFont }) {
   return (
     <div className="editor">
@@ -24,7 +22,7 @@ export default function Editor({
         <label>Subtitle</label>
       </div>
       <div className="form-control">
-        <select value={titleFont} onChange={(e) => setTitleFont(e.target.value)} >
+        <select onChange={(e) => setTitleFont(e.target.value)} >
           <option value="architect">{"Architect's Daughter"}</option>
           <option value="comforter">Comforter</option>
           <option value="fredoka">Fredoka</option>
